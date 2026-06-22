@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shetkari Petroleum – HPCL Authorized Dealer | Business Fuel Credit Solutions</title>
+<meta name="description" content="Shetkari Petroleum – HPCL Authorized Dealer offering fleet fuel credit, bulk diesel supply, and professional account management for transport, logistics, and construction businesses on NH4, Kognoli.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{--blue:#003087;--blue-mid:#0046b5;--blue-light:#e8f0fb;--red:#E31E24;--red-dark:#b5181d;--navy:#001a5c;--gold:#F5A623;--gold-light:#fff8ec;--white:#ffffff;--off-white:#F8F9FC;--gray-100:#f1f4f9;--gray-200:#e2e8f4;--gray-400:#94a3b8;--gray-600:#475569;--gray-800:#1e293b;--text:#1a2540;--radius:14px;--shadow:0 8px 32px rgba(0,48,135,0.10);--shadow-lg:0 16px 56px rgba(0,48,135,0.16);--transition:0.3s cubic-bezier(0.4,0,0.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden}
+h1,h2,h3,h4,h5{font-family:'Montserrat',sans-serif}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--gray-100)}::-webkit-scrollbar-thumb{background:var(--blue);border-radius:4px}
+/* NAV */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:transparent;transition:background var(--transition),box-shadow var(--transition);padding:0 2rem}
+#navbar.scrolled{background:var(--navy);box-shadow:0 4px 24px rgba(0,0,0,0.18)}
+.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:70px}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-logo-badge{width:44px;height:44px;border-radius:10px;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:900;color:white;font-size:1.1rem}
+.nav-logo-text{color:white}
+.nav-logo-text strong{display:block;font-size:1rem;font-weight:800;letter-spacing:0.5px}
+.nav-logo-text span{font-size:0.68rem;font-weight:500;opacity:0.8;letter-spacing:0.8px;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.88);text-decoration:none;font-size:0.875rem;font-weight:500;font-family:'Montserrat',sans-serif;transition:color var(--transition);padding:4px 0;border-bottom:2px solid transparent}
+.nav-links a:hover{color:white;border-bottom-color:var(--gold)}
+.nav-cta{background:var(--red)!important;color:white!important;padding:9px 22px!important;border-radius:8px;border-bottom:none!important;font-weight:700!important}
+.nav-cta:hover{background:var(--red-dark)!important;transform:translateY(-1px)}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;color:white}
+.hamburger span{display:block;width:24px;height:2px;background:white;margin:5px 0;border-radius:2px}
+/* HERO */
+#hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(120deg,rgba(0,26,92,0.93) 0%,rgba(0,48,135,0.80) 55%,rgba(227,30,36,0.55) 100%),url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1600&q=80') center/cover no-repeat}
+.hero-bg::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent,transparent 60px,rgba(255,255,255,0.025) 60px,rgba(255,255,255,0.025) 61px)}
+.hero-content{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:90px 2rem 0;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,0.18);border:1px solid rgba(245,166,35,0.4);color:var(--gold);border-radius:50px;padding:6px 16px;font-size:0.78rem;font-weight:700;font-family:'Montserrat',sans-serif;letter-spacing:1px;text-transform:uppercase;margin-bottom:1.5rem}
+.hero-h1{font-size:clamp(2.2rem,4vw,3.5rem);font-weight:900;color:white;line-height:1.12;letter-spacing:-0.5px;margin-bottom:1.25rem}
+.hero-h1 em{color:var(--gold);font-style:normal}
+.hero-sub{font-size:1.15rem;color:rgba(255,255,255,0.82);line-height:1.7;margin-bottom:2.2rem}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{background:var(--red);color:white;padding:14px 30px;border-radius:10px;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;border:none;cursor:pointer;transition:all var(--transition);display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(227,30,36,0.4)}
+.btn-outline{background:transparent;color:white;padding:14px 30px;border-radius:10px;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.95rem;border:2px solid rgba(255,255,255,0.5);cursor:pointer;transition:all var(--transition);display:inline-flex;align-items:center;gap:8px}
+.btn-outline:hover{border-color:white;background:rgba(255,255,255,0.1);transform:translateY(-2px)}
+.hero-card{background:rgba(255,255,255,0.07);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:2rem}
+.hero-card-title{font-family:'Montserrat',sans-serif;font-weight:800;color:white;font-size:1rem;margin-bottom:1.5rem;padding-bottom:0.75rem;border-bottom:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;gap:8px}
+.hero-card-title i{color:var(--gold)}
+.plan-mini{margin-bottom:1.2rem}
+.plan-mini-label{display:flex;justify-content:space-between;margin-bottom:6px}
+.plan-mini-label span:first-child{color:rgba(255,255,255,0.7);font-size:0.8rem}
+.plan-mini-label span:last-child{color:white;font-weight:700;font-size:0.85rem;font-family:'Montserrat',sans-serif}
+.plan-bar{height:8px;background:rgba(255,255,255,0.12);border-radius:4px;overflow:hidden}
+.plan-fill{height:100%;border-radius:4px;width:0;transition:width 1.8s ease 0.5s}
+.fill-silver{background:linear-gradient(90deg,#94a3b8,#cbd5e1)}
+.fill-gold{background:linear-gradient(90deg,var(--gold),#fbbf24)}
+.fill-platinum{background:linear-gradient(90deg,var(--blue-mid),#60a5fa)}
+.hero-badge-row{display:flex;gap:0.75rem;margin-top:1.5rem;flex-wrap:wrap}
+.hero-badge{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:white;border-radius:6px;padding:5px 12px;font-size:0.75rem;font-weight:600;font-family:'Montserrat',sans-serif}
+.hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px}
+.hero-scroll span{color:rgba(255,255,255,0.5);font-size:0.72rem;text-transform:uppercase;letter-spacing:2px}
+.scroll-dot{width:24px;height:36px;border:2px solid rgba(255,255,255,0.3);border-radius:12px;display:flex;justify-content:center;padding-top:6px}
+.scroll-dot::after{content:'';width:4px;height:8px;background:white;border-radius:2px;animation:scrollBounce 1.8s infinite}
+@keyframes scrollBounce{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(8px);opacity:0.4}}
+/* COMMONS */
+section{padding:90px 2rem}
+.container{max-width:1280px;margin:0 auto}
+.section-tag{display:inline-block;background:var(--blue-light);color:var(--blue-mid);font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:5px 14px;border-radius:50px;margin-bottom:1rem}
+.section-tag.red{background:#fde8e8;color:var(--red)}
+.section-tag.gold{background:var(--gold-light);color:#b5780a}
+.section-title{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:1rem;letter-spacing:-0.5px}
+.section-subtitle{font-size:1.05rem;color:var(--gray-600);line-height:1.75;max-width:640px}
+.section-header{margin-bottom:3.5rem}
+.section-header.centered{text-align:center}
+.section-header.centered .section-subtitle{margin:0 auto}
+/* TICKER */
+#ticker{background:var(--navy);overflow:hidden}
+.ticker-inner{display:flex;align-items:center;white-space:nowrap;animation:tickerScroll 28s linear infinite}
+.ticker-item{display:inline-flex;align-items:center;gap:10px;padding:16px 40px;color:rgba(255,255,255,0.85);font-size:0.82rem;font-family:'Montserrat',sans-serif;font-weight:600;border-right:1px solid rgba(255,255,255,0.1)}
+.ticker-item i{color:var(--gold)}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+/* BENEFITS */
+#benefits{background:var(--off-white)}
+.benefits-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem}
+.benefit-card{background:white;border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);border:1px solid var(--gray-200);transition:all var(--transition);position:relative;overflow:hidden}
+.benefit-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--red));transform:scaleX(0);transform-origin:left;transition:transform var(--transition)}
+.benefit-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.benefit-card:hover::before{transform:scaleX(1)}
+.benefit-icon{width:52px;height:52px;border-radius:12px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--blue);margin-bottom:1.25rem;transition:all var(--transition)}
+.benefit-card:hover .benefit-icon{background:var(--blue);color:white}
+.benefit-card h3{font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:var(--navy)}
+.benefit-card p{font-size:0.875rem;color:var(--gray-600);line-height:1.6}
+/* WHY */
+#why{background:var(--navy)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.why-visual{position:relative}
+.why-img-wrap{border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.4);aspect-ratio:4/3;background:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80') center/cover}
+.why-badge{position:absolute;bottom:-20px;right:-20px;background:var(--red);color:white;border-radius:16px;padding:1.25rem 1.5rem;text-align:center;box-shadow:0 8px 32px rgba(227,30,36,0.4)}
+.why-badge strong{display:block;font-family:'Montserrat',sans-serif;font-size:2rem;font-weight:900}
+.why-badge span{font-size:0.75rem;opacity:0.9}
+.why-list{list-style:none;margin-top:2rem;display:flex;flex-direction:column;gap:1rem}
+.why-list li{display:flex;align-items:flex-start;gap:14px;color:rgba(255,255,255,0.88);font-size:0.95rem;line-height:1.5}
+.why-check{width:28px;height:28px;border-radius:50%;background:rgba(245,166,35,0.2);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:0.8rem;flex-shrink:0;margin-top:1px}
+.why-list li strong{color:white;font-weight:600}
+/* INDUSTRIES */
+#industries{background:var(--off-white)}
+.industries-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem}
+.industry-card{background:white;border-radius:14px;padding:1.75rem 1.5rem;text-align:center;border:2px solid var(--gray-200);transition:all var(--transition)}
+.industry-card:hover{border-color:var(--blue);transform:translateY(-4px);box-shadow:var(--shadow)}
+.industry-card:hover .ind-icon{background:var(--blue);color:white}
+.ind-icon{width:60px;height:60px;border-radius:14px;background:var(--blue-light);color:var(--blue-mid);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 1rem;transition:all var(--transition)}
+.industry-card h3{font-size:0.9rem;font-weight:700;color:var(--navy)}
+/* PLANS */
+#plans{background:white}
+.plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;align-items:start}
+.plan-card{border-radius:20px;padding:2.5rem 2rem;border:2px solid var(--gray-200);position:relative;overflow:hidden;transition:all var(--transition)}
+.plan-card.silver{background:white}
+.plan-card.gold{background:var(--navy);border-color:var(--gold);transform:scale(1.03)}
+.plan-card.platinum{background:linear-gradient(145deg,var(--navy),var(--blue-mid));border-color:var(--blue-mid)}
+.plan-popular{position:absolute;top:16px;right:-30px;background:var(--gold);color:var(--navy);font-weight:800;font-size:0.7rem;letter-spacing:1px;text-transform:uppercase;padding:5px 44px;transform:rotate(45deg);font-family:'Montserrat',sans-serif}
+.plan-icon{width:56px;height:56px;border-radius:14px;margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;font-size:1.6rem}
+.silver .plan-icon{background:#f1f5f9;color:#64748b}
+.gold .plan-icon{background:rgba(245,166,35,0.2);color:var(--gold)}
+.platinum .plan-icon{background:rgba(255,255,255,0.15);color:white}
+.plan-name{font-family:'Montserrat',sans-serif;font-weight:900;font-size:1.4rem;margin-bottom:0.25rem}
+.silver .plan-name{color:var(--navy)}
+.gold .plan-name,.platinum .plan-name{color:white}
+.plan-tagline{font-size:0.82rem;margin-bottom:1.75rem}
+.silver .plan-tagline{color:var(--gray-600)}
+.gold .plan-tagline,.platinum .plan-tagline{color:rgba(255,255,255,0.65)}
+.plan-limit-label{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.silver .plan-limit-label{color:var(--gray-400)}
+.gold .plan-limit-label,.platinum .plan-limit-label{color:rgba(255,255,255,0.5)}
+.plan-limit-value{font-family:'Montserrat',sans-serif;font-size:2rem;font-weight:900;line-height:1;margin-bottom:4px}
+.silver .plan-limit-value{color:var(--navy)}
+.gold .plan-limit-value{color:var(--gold)}
+.platinum .plan-limit-value{color:white}
+.plan-period{font-size:0.85rem;margin-bottom:1.25rem}
+.silver .plan-period{color:var(--gray-600)}
+.gold .plan-period,.platinum .plan-period{color:rgba(255,255,255,0.65)}
+.plan-gauge{height:8px;border-radius:4px;margin:1.25rem 0;overflow:hidden}
+.plan-gauge-fill{height:100%;border-radius:4px;width:0;transition:width 2s ease 0.3s}
+.silver .plan-gauge{background:#f1f5f9}
+.silver .plan-gauge-fill{background:linear-gradient(90deg,#94a3b8,#64748b)}
+.gold .plan-gauge{background:rgba(255,255,255,0.15)}
+.gold .plan-gauge-fill{background:linear-gradient(90deg,var(--gold),#fbbf24)}
+.platinum .plan-gauge{background:rgba(255,255,255,0.15)}
+.platinum .plan-gauge-fill{background:linear-gradient(90deg,#60a5fa,white)}
+.plan-features{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:0.75rem}
+.plan-features li{display:flex;align-items:center;gap:10px;font-size:0.875rem}
+.silver .plan-features li{color:var(--gray-600)}
+.gold .plan-features li,.platinum .plan-features li{color:rgba(255,255,255,0.82)}
+.plan-features li i{font-size:0.8rem;flex-shrink:0}
+.silver .plan-features li i{color:var(--blue)}
+.gold .plan-features li i{color:var(--gold)}
+.platinum .plan-features li i{color:#60a5fa}
+.btn-plan{display:block;width:100%;text-align:center;padding:13px;border-radius:10px;font-weight:700;font-size:0.9rem;font-family:'Montserrat',sans-serif;text-decoration:none;cursor:pointer;border:none;transition:all var(--transition);margin-top:0.5rem}
+.silver .btn-plan{background:var(--blue);color:white}
+.silver .btn-plan:hover{background:var(--navy);transform:translateY(-2px)}
+.gold .btn-plan{background:var(--gold);color:var(--navy)}
+.gold .btn-plan:hover{background:#e8971a;transform:translateY(-2px)}
+.platinum .btn-plan{background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.3)}
+.platinum .btn-plan:hover{background:rgba(255,255,255,0.25);transform:translateY(-2px)}
+/* FLEET */
+#fleet{background:var(--off-white)}
+.fleet-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.fleet-features{display:flex;flex-direction:column;gap:1.25rem}
+.fleet-feature{background:white;border-radius:14px;padding:1.5rem;display:flex;align-items:flex-start;gap:1rem;box-shadow:var(--shadow);border:1px solid var(--gray-200);transition:all var(--transition)}
+.fleet-feature:hover{transform:translateX(6px);border-left:3px solid var(--blue)}
+.fleet-feat-icon{width:44px;height:44px;border-radius:10px;background:var(--blue-light);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.fleet-feature h4{font-size:0.92rem;font-weight:700;margin-bottom:0.3rem;color:var(--navy)}
+.fleet-feature p{font-size:0.82rem;color:var(--gray-600);line-height:1.5}
+.fleet-dashboard{background:var(--navy);border-radius:20px;padding:1.75rem;box-shadow:var(--shadow-lg)}
+.fleet-dash-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.1)}
+.fleet-dash-title{font-family:'Montserrat',sans-serif;font-weight:700;color:white;font-size:0.9rem}
+.live-badge{background:rgba(34,197,94,0.15);color:#22c55e;font-size:0.7rem;font-weight:700;padding:3px 10px;border-radius:50px;display:flex;align-items:center;gap:5px}
+.live-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.dash-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem}
+.dash-stat{background:rgba(255,255,255,0.06);border-radius:10px;padding:1rem;border:1px solid rgba(255,255,255,0.08)}
+.dash-stat-val{font-family:'Montserrat',sans-serif;font-weight:900;font-size:1.5rem;color:white}
+.dash-stat-label{font-size:0.72rem;color:rgba(255,255,255,0.5);margin-top:2px}
+.dash-stat-change{font-size:0.72rem;color:#22c55e;font-weight:600;margin-top:4px}
+.dash-veh-title{font-size:0.75rem;font-weight:600;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:0.75rem}
+.dash-veh-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.dash-veh-row:last-child{border-bottom:none}
+.veh-num{font-family:'Montserrat',sans-serif;font-size:0.8rem;font-weight:700;color:white;min-width:90px}
+.veh-bar{flex:1;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden}
+.veh-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue-mid),#60a5fa)}
+.veh-ltr{font-size:0.78rem;color:rgba(255,255,255,0.6);min-width:50px;text-align:right}
+/* REWARDS */
+#rewards{background:white}
+.rewards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem}
+.reward-card{border-radius:16px;padding:2rem;background:linear-gradient(145deg,var(--blue-light),#dbe8fb);border:1px solid var(--gray-200);transition:all var(--transition)}
+.reward-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.reward-num{font-family:'Montserrat',sans-serif;font-size:2.5rem;font-weight:900;color:var(--blue);opacity:0.15;line-height:1;margin-bottom:0.5rem}
+.reward-card h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem}
+.reward-card p{font-size:0.875rem;color:var(--gray-600);line-height:1.6}
+/* STATS */
+#stats{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 60%,var(--red) 100%);padding:80px 2rem;position:relative;overflow:hidden}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;position:relative;z-index:1}
+.stat-item{text-align:center}
+.stat-number{font-family:'Montserrat',sans-serif;font-size:clamp(2.5rem,4vw,3.5rem);font-weight:900;color:white;line-height:1;margin-bottom:0.5rem}
+.stat-suffix{color:var(--gold)}
+.stat-label{font-size:0.9rem;color:rgba(255,255,255,0.75);font-weight:500;line-height:1.4}
+.stat-divider{width:40px;height:3px;background:rgba(255,255,255,0.2);margin:0.75rem auto 0;border-radius:2px}
+/* TESTIMONIALS */
+#testimonials{background:var(--off-white)}
+.testimonials-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.testi-card{background:white;border-radius:20px;padding:2rem;box-shadow:var(--shadow);border:1px solid var(--gray-200);transition:all var(--transition)}
+.testi-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.testi-stars{color:var(--gold);margin-bottom:1rem;font-size:0.9rem}
+.testi-text{font-size:0.95rem;line-height:1.75;color:var(--gray-600);margin-bottom:1.5rem;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:12px}
+.testi-avatar{width:48px;height:48px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:800;color:white;font-size:1rem}
+.testi-name{font-weight:700;font-size:0.92rem;color:var(--navy)}
+.testi-role{font-size:0.78rem;color:var(--gray-400)}
+.testi-company{font-size:0.78rem;color:var(--blue);font-weight:600}
+/* TRUST */
+#trust{background:white}
+.trust-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem}
+.trust-item{text-align:center;padding:2rem 1rem;border-radius:14px;border:2px solid var(--gray-200);transition:all var(--transition)}
+.trust-item:hover{border-color:var(--blue);transform:translateY(-4px)}
+.trust-icon{width:56px;height:56px;border-radius:14px;margin:0 auto 1rem;background:var(--blue-light);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:1.4rem}
+.trust-item h4{font-size:0.875rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem}
+.trust-item p{font-size:0.78rem;color:var(--gray-600);line-height:1.5}
+/* CTA */
+#cta-banner{background:var(--red);padding:80px 2rem;text-align:center;position:relative;overflow:hidden}
+#cta-banner::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,0.07)}
+#cta-banner::after{content:'';position:absolute;bottom:-60px;left:-60px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.05)}
+.cta-inner{position:relative;z-index:1}
+#cta-banner h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:900;color:white;margin-bottom:1rem}
+#cta-banner p{color:rgba(255,255,255,0.85);font-size:1.05rem;margin-bottom:2.5rem}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-white{background:white;color:var(--red);padding:14px 30px;border-radius:10px;font-weight:700;font-family:'Montserrat',sans-serif;font-size:0.95rem;text-decoration:none;transition:all var(--transition);display:inline-flex;align-items:center;gap:8px}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.2)}
+.btn-white-outline{background:transparent;color:white;border:2px solid rgba(255,255,255,0.6);padding:14px 30px;border-radius:10px;font-weight:700;font-family:'Montserrat',sans-serif;font-size:0.95rem;text-decoration:none;transition:all var(--transition);display:inline-flex;align-items:center;gap:8px}
+.btn-white-outline:hover{border-color:white;background:rgba(255,255,255,0.1);transform:translateY(-2px)}
+/* FAQ */
+#faq{background:var(--off-white)}
+.faq-grid{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
+.faq-item{background:white;border-radius:14px;border:1px solid var(--gray-200);overflow:hidden;box-shadow:0 2px 8px rgba(0,48,135,0.05)}
+.faq-q{padding:1.25rem 1.5rem;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-weight:700;color:var(--navy);font-family:'Montserrat',sans-serif;font-size:0.95rem;user-select:none;transition:color var(--transition)}
+.faq-q:hover{color:var(--blue)}
+.faq-q i{color:var(--blue);transition:transform var(--transition);flex-shrink:0;margin-left:1rem}
+.faq-item.open .faq-q i{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease;padding:0 1.5rem;color:var(--gray-600);font-size:0.9rem;line-height:1.7}
+.faq-item.open .faq-a{max-height:300px;padding:0 1.5rem 1.25rem}
+/* CONTACT */
+#contact{background:var(--navy)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+.contact-info .section-title{color:white}
+.contact-info .section-subtitle{color:rgba(255,255,255,0.65)}
+.contact-details{margin-top:2rem;display:flex;flex-direction:column;gap:1.25rem}
+.contact-detail{display:flex;align-items:flex-start;gap:1rem}
+.contact-icon{width:44px;height:44px;border-radius:10px;flex-shrink:0;background:rgba(255,255,255,0.08);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.contact-detail h4{font-size:0.78rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+.contact-detail p,.contact-detail a{color:rgba(255,255,255,0.88);font-size:0.95rem;text-decoration:none;transition:color var(--transition)}
+.contact-detail a:hover{color:var(--gold)}
+.contact-form{background:rgba(255,255,255,0.06);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:2.5rem}
+.contact-form h3{font-family:'Montserrat',sans-serif;font-weight:800;color:white;font-size:1.2rem;margin-bottom:1.75rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{margin-bottom:1.25rem}
+.form-group label{display:block;font-size:0.78rem;font-weight:600;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:6px}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:12px 16px;color:white;font-size:0.9rem;font-family:'Inter',sans-serif;transition:border-color var(--transition),background var(--transition);outline:none}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.35)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold);background:rgba(255,255,255,0.12)}
+.form-group select{cursor:pointer}
+.form-group select option{background:var(--navy);color:white}
+.form-group textarea{resize:vertical;min-height:100px}
+.btn-submit{width:100%;background:var(--gold);color:var(--navy);padding:14px;border:none;border-radius:10px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:0.95rem;cursor:pointer;transition:all var(--transition);display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-submit:hover{background:#e8971a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,166,35,0.4)}
+.map-section{height:260px;border-radius:16px;overflow:hidden;margin-top:2rem;position:relative;background:var(--gray-800)}
+.map-section iframe{width:100%;height:100%;border:none;display:block}
+.map-fallback{display:inline-flex;align-items:center;gap:8px;margin-top:0.75rem;color:var(--gold);text-decoration:none;font-size:0.85rem;font-weight:600;font-family:'Montserrat',sans-serif;transition:color var(--transition)}
+.map-fallback:hover{color:#fff;text-decoration:underline}
+/* FOOTER */
+footer{background:#000f33;padding:60px 2rem 0}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem}
+.footer-brand p{font-size:0.875rem;color:rgba(255,255,255,0.5);line-height:1.7;margin-top:1rem;max-width:280px}
+.footer-hpcl-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,0.1);border:1px solid rgba(245,166,35,0.25);border-radius:8px;padding:8px 14px;margin-top:1.25rem;color:var(--gold);font-size:0.75rem;font-weight:700;font-family:'Montserrat',sans-serif}
+.footer-col h4{font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.85rem;color:white;text-transform:uppercase;letter-spacing:1px;margin-bottom:1.25rem}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:0.75rem}
+.footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.875rem;transition:color var(--transition)}
+.footer-links a:hover{color:var(--gold)}
+.footer-social{display:flex;gap:10px;margin-top:1.25rem}
+.social-btn{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.6);display:flex;align-items:center;justify-content:center;font-size:0.95rem;text-decoration:none;transition:all var(--transition)}
+.social-btn:hover{background:var(--blue);color:white;border-color:var(--blue)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.07);padding:1.5rem 0;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:0.8rem;color:rgba(255,255,255,0.35)}
+.footer-bottom-links{display:flex;gap:1.5rem}
+.footer-bottom-links a{font-size:0.8rem;color:rgba(255,255,255,0.35);text-decoration:none;transition:color var(--transition)}
+.footer-bottom-links a:hover{color:white}
+/* FLOATING WA */
+.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:999;width:56px;height:56px;border-radius:50%;background:#25d366;color:white;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 6px 24px rgba(37,211,102,0.4);animation:waPulse 2.5s infinite;transition:transform var(--transition)}
+.wa-float:hover{transform:scale(1.1)}
+@keyframes waPulse{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,0.4)}50%{box-shadow:0 6px 40px rgba(37,211,102,0.7)}}
+/* MOBILE NAV */
+.mobile-nav{display:none;position:fixed;top:70px;left:0;right:0;background:var(--navy);z-index:999;padding:1.5rem;flex-direction:column;gap:0.5rem;border-top:1px solid rgba(255,255,255,0.1);max-height:calc(100vh - 70px);overflow-y:auto}
+.mobile-nav.open{display:flex}
+.mobile-nav a{color:rgba(255,255,255,0.85);text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.9rem;padding:12px 16px;border-radius:10px;transition:all var(--transition)}
+.mobile-nav a:hover{background:rgba(255,255,255,0.08);color:white}
+.mobile-nav .nav-cta{background:var(--red);color:white!important;text-align:center;margin-top:0.5rem}
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+/* TOAST */
+.toast{position:fixed;bottom:6rem;right:2rem;z-index:9999;background:#22c55e;color:white;border-radius:12px;padding:14px 20px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:10px;box-shadow:0 8px 32px rgba(0,0,0,0.2);transform:translateY(100px);opacity:0;transition:all 0.4s ease}
+.toast.show{transform:translateY(0);opacity:1}
+/* RESPONSIVE */
+@media(max-width:1100px){.plans-grid{grid-template-columns:1fr 1fr}.plan-card.gold{transform:scale(1)}.trust-grid{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.hero-content{grid-template-columns:1fr}.hero-card{display:none}.why-grid,.fleet-grid,.contact-grid{grid-template-columns:1fr;gap:3rem}.why-badge{right:0;bottom:-15px}.stats-grid{grid-template-columns:repeat(2,1fr)}.testimonials-grid{grid-template-columns:1fr}.plans-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:block}section{padding:70px 1.25rem}.trust-grid{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:1fr 1fr;gap:1.5rem}.footer-grid{grid-template-columns:1fr;gap:2rem}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}
+@media(max-width:480px){.hero-btns{flex-direction:column}.btn-primary,.btn-outline{justify-content:center}.trust-grid{grid-template-columns:1fr 1fr}.cta-btns{flex-direction:column;align-items:center}.benefits-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="nav-logo-badge">SP</div>
+      <div class="nav-logo-text"><strong>Shetkari Petroleum</strong><span>HPCL Authorized Dealer</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#plans">Credit Plans</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#fleet">Fleet Mgmt</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta">Apply Now</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#benefits" onclick="closeMobileNav()">Benefits</a>
+  <a href="#plans" onclick="closeMobileNav()">Credit Plans</a>
+  <a href="#industries" onclick="closeMobileNav()">Industries</a>
+  <a href="#fleet" onclick="closeMobileNav()">Fleet Management</a>
+  <a href="#rewards" onclick="closeMobileNav()">Rewards</a>
+  <a href="#testimonials" onclick="closeMobileNav()">Testimonials</a>
+  <a href="#faq" onclick="closeMobileNav()">FAQ</a>
+  <a href="#contact" onclick="closeMobileNav()" class="nav-cta">Apply for Credit</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-text reveal">
+      <div class="hero-tag"><i class="fas fa-gas-pump"></i> HPCL Authorized Dealer</div>
+      <h1 class="hero-h1">Trusted Fuel Credit<br>Solutions for <em>Businesses</em></h1>
+      <p class="hero-sub">Fuel Your Growth with Flexible Credit Facilities. Dedicated fuel management for fleets, transporters, contractors, and logistics businesses across Maharashtra.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary"><i class="fas fa-file-alt"></i> Apply for Credit Account</a>
+        <a href="tel:+919552055022" class="btn-outline"><i class="fas fa-phone"></i> Contact Us</a>
+      </div>
+    </div>
+    <div class="hero-card reveal" style="transition-delay:0.2s">
+      <div class="hero-card-title"><i class="fas fa-tachometer-alt"></i> Credit Plan Overview</div>
+      <div class="plan-mini"><div class="plan-mini-label"><span>Silver Account</span><span>₹1 Lakh Limit</span></div><div class="plan-bar"><div class="plan-fill fill-silver" data-width="33"></div></div></div>
+      <div class="plan-mini"><div class="plan-mini-label"><span>Gold Account</span><span>₹5 Lakh Limit</span></div><div class="plan-bar"><div class="plan-fill fill-gold" data-width="66"></div></div></div>
+      <div class="plan-mini"><div class="plan-mini-label"><span>Platinum Account</span><span>Custom Limit</span></div><div class="plan-bar"><div class="plan-fill fill-platinum" data-width="100"></div></div></div>
+      <div class="hero-badge-row">
+        <span class="hero-badge">GST Invoices</span>
+        <span class="hero-badge">Digital Billing</span>
+        <span class="hero-badge">WhatsApp Alerts</span>
+        <span class="hero-badge">24/7 Service</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-dot"></div><span>Scroll</span></div>
+</section>
+
+<div id="ticker">
+  <div class="ticker-inner">
+    <div class="ticker-item"><i class="fas fa-check-circle"></i> HPCL Quality Assured Fuel</div>
+    <div class="ticker-item"><i class="fas fa-clock"></i> Flexible 15–30 Day Credit</div>
+    <div class="ticker-item"><i class="fas fa-file-invoice"></i> GST Invoices Available</div>
+    <div class="ticker-item"><i class="fas fa-truck"></i> Bulk Diesel Supply</div>
+    <div class="ticker-item"><i class="fab fa-whatsapp"></i> WhatsApp Statements</div>
+    <div class="ticker-item"><i class="fas fa-shield-alt"></i> Secure Fuel Monitoring</div>
+    <div class="ticker-item"><i class="fas fa-star"></i> Priority Service Lanes</div>
+    <div class="ticker-item"><i class="fas fa-headset"></i> Dedicated Account Support</div>
+    <div class="ticker-item"><i class="fas fa-check-circle"></i> HPCL Quality Assured Fuel</div>
+    <div class="ticker-item"><i class="fas fa-clock"></i> Flexible 15–30 Day Credit</div>
+    <div class="ticker-item"><i class="fas fa-file-invoice"></i> GST Invoices Available</div>
+    <div class="ticker-item"><i class="fas fa-truck"></i> Bulk Diesel Supply</div>
+    <div class="ticker-item"><i class="fab fa-whatsapp"></i> WhatsApp Statements</div>
+    <div class="ticker-item"><i class="fas fa-shield-alt"></i> Secure Fuel Monitoring</div>
+    <div class="ticker-item"><i class="fas fa-star"></i> Priority Service Lanes</div>
+    <div class="ticker-item"><i class="fas fa-headset"></i> Dedicated Account Support</div>
+  </div>
+</div>
+
+<section id="benefits">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Key Benefits</div>
+      <h2 class="section-title">Everything Your Business Needs</h2>
+      <p class="section-subtitle">Comprehensive fuel credit solutions designed specifically for fleet owners, contractors, and logistics businesses.</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card reveal"><div class="benefit-icon"><i class="fas fa-calendar-alt"></i></div><h3>Flexible Credit Periods</h3><p>Choose from 15-day or 30-day credit cycles tailored to your business cash flow and operational needs.</p></div>
+      <div class="benefit-card reveal" style="transition-delay:0.05s"><div class="benefit-icon"><i class="fas fa-file-invoice-dollar"></i></div><h3>Monthly Billing Statements</h3><p>Detailed itemized monthly statements delivered digitally, ensuring complete transparency for your accounts team.</p></div>
+      <div class="benefit-card reveal" style="transition-delay:0.1s"><div class="benefit-icon"><i class="fas fa-truck"></i></div><h3>Fleet Fuel Management</h3><p>Driver-wise and vehicle-wise fuel tracking with real-time monitoring and consumption analytics.</p></div>
+      <div class="benefit-card reveal" style="transition-delay:0.15s"><div class="benefit-icon"><i class="fas fa-drum"></i></div><h3>Diesel Bulk Supply</h3><p>High-volume diesel supply with priority loading for bulk consumers and earthmoving machinery operators.</p></div>
+      <div class="benefit-card reveal" style="transition-delay:0.2s"><div class="benefit-icon"><i class="fas fa-bolt"></i></div><h3>Fast Service Lanes</h3><p>Dedicated credit account lanes to minimize wait times. Your fleet never waits in the general queue.</p></div>
+      <div class="benefit-card reveal" style="transition-delay:0.25s"><div class="benefit-icon"><i class="fas fa-receipt"></i></div><h3>GST Invoices</h3><p>Proper GST-compliant invoices for every transaction, making your tax filing simple and accurate.</p></div>
+      <div class="benefit-card reveal" style="transition-delay:0.3s"><div class="benefit-icon"><i class="fas fa-user-tie"></i></div><h3>Dedicated Account Support</h3><p>A relationship manager exclusively assigned to your account for billing queries and escalations.</p></div>
+      <div class="benefit-card reveal" style="transition-delay:0.35s"><div class="benefit-icon"><i class="fas fa-chart-line"></i></div><h3>Transparent Fuel Tracking</h3><p>Full audit trail for every litre dispensed. Monitor consumption trends and prevent fuel misuse.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-visual reveal">
+        <div class="why-img-wrap"></div>
+        <div class="why-badge"><strong>20+</strong><span>Years of<br>Trusted Service</span></div>
+      </div>
+      <div class="reveal" style="transition-delay:0.15s">
+        <div class="section-tag">Why Shetkari Petroleum</div>
+        <h2 class="section-title" style="color:white">Why Businesses Choose Us</h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.65)">We’ve built long-term trust with hundreds of fleets, contractors, and transport companies across the region.</p>
+        <ul class="why-list">
+          <li><div class="why-check"><i class="fas fa-check"></i></div><div><strong>Reliable HPCL Fuel Quality</strong> — Certified, adulteration-free petrol and diesel every time.</div></li>
+          <li><div class="why-check"><i class="fas fa-check"></i></div><div><strong>Competitive Fuel Pricing</strong> — Market-aligned pricing with volume benefits for bulk consumers.</div></li>
+          <li><div class="why-check"><i class="fas fa-check"></i></div><div><strong>Customized Credit Limits</strong> — Credit facilities calibrated to your actual monthly consumption.</div></li>
+          <li><div class="why-check"><i class="fas fa-check"></i></div><div><strong>Digital Billing &amp; WhatsApp Statements</strong> — Real-time statements sent directly to your phone.</div></li>
+          <li><div class="why-check"><i class="fas fa-check"></i></div><div><strong>Trusted by 500+ Businesses</strong> — Active credit accounts across diverse industries in Maharashtra.</div></li>
+          <li><div class="why-check"><i class="fas fa-check"></i></div><div><strong>Secure Fuel Monitoring System</strong> — Advanced tracking to prevent driver-side fuel misuse.</div></li>
+          <li><div class="why-check"><i class="fas fa-check"></i></div><div><strong>Long-term Business Relationships</strong> — We grow with your business, not just process transactions.</div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="industries">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-tag">Industries We Serve</div>
+      <h2 class="section-title">Built for Every Business That Runs on Fuel</h2>
+      <p class="section-subtitle">From school buses to sugarcane transporters, our credit solutions adapt to the unique demands of every sector.</p>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card reveal"><div class="ind-icon"><i class="fas fa-truck-moving"></i></div><h3>Transport Companies</h3></div>
+      <div class="industry-card reveal" style="transition-delay:0.05s"><div class="ind-icon"><i class="fas fa-warehouse"></i></div><h3>Logistics Fleets</h3></div>
+      <div class="industry-card reveal" style="transition-delay:0.1s"><div class="ind-icon"><i class="fas fa-hard-hat"></i></div><h3>Construction Contractors</h3></div>
+      <div class="industry-card reveal" style="transition-delay:0.15s"><div class="ind-icon"><i class="fas fa-bus"></i></div><h3>School &amp; College Buses</h3></div>
+      <div class="industry-card reveal" style="transition-delay:0.2s"><div class="ind-icon"><i class="fas fa-leaf"></i></div><h3>Sugarcane Transporters</h3></div>
+      <div class="industry-card reveal" style="transition-delay:0.25s"><div class="ind-icon"><i class="fas fa-tractor"></i></div><h3>Agriculture Businesses</h3></div>
+      <div class="industry-card reveal" style="transition-delay:0.3s"><div class="ind-icon"><i class="fas fa-cogs"></i></div><h3>Earthmovers &amp; JCB Operators</h3></div>
+      <div class="industry-card reveal" style="transition-delay:0.35s"><div class="ind-icon"><i class="fas fa-building"></i></div><h3>Corporate Vehicle Fleets</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-tag">Credit Program</div>
+      <h2 class="section-title">Choose Your Credit Account</h2>
+      <p class="section-subtitle">Transparent, structured credit plans designed to match the scale and pace of your business operations.</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan-card silver reveal">
+        <div class="plan-icon"><i class="fas fa-medal"></i></div>
+        <div class="plan-name">Silver</div>
+        <div class="plan-tagline">Perfect for small fleets and startups</div>
+        <div class="plan-limit-label">Credit Limit</div>
+        <div class="plan-limit-value">₹1 Lakh</div>
+        <div class="plan-period">15-day credit cycle</div>
+        <div class="plan-gauge"><div class="plan-gauge-fill" data-width="33"></div></div>
+        <ul class="plan-features">
+          <li><i class="fas fa-check-circle"></i> Up to ₹1,00,000 credit limit</li>
+          <li><i class="fas fa-check-circle"></i> 15-day credit period</li>
+          <li><i class="fas fa-check-circle"></i> Monthly billing statement</li>
+          <li><i class="fas fa-check-circle"></i> GST-compliant invoices</li>
+          <li><i class="fas fa-check-circle"></i> WhatsApp notifications</li>
+          <li><i class="fas fa-check-circle"></i> Email support</li>
+        </ul>
+        <a href="#contact" class="btn-plan">Apply for Silver</a>
+      </div>
+      <div class="plan-card gold reveal" style="transition-delay:0.1s">
+        <div class="plan-popular">Most Popular</div>
+        <div class="plan-icon"><i class="fas fa-star"></i></div>
+        <div class="plan-name">Gold</div>
+        <div class="plan-tagline">Ideal for growing transport businesses</div>
+        <div class="plan-limit-label">Credit Limit</div>
+        <div class="plan-limit-value">₹5 Lakh</div>
+        <div class="plan-period">30-day credit cycle</div>
+        <div class="plan-gauge"><div class="plan-gauge-fill" data-width="66"></div></div>
+        <ul class="plan-features">
+          <li><i class="fas fa-check-circle"></i> Up to ₹5,00,000 credit limit</li>
+          <li><i class="fas fa-check-circle"></i> 30-day credit period</li>
+          <li><i class="fas fa-check-circle"></i> Priority service lane access</li>
+          <li><i class="fas fa-check-circle"></i> Driver-wise fuel tracking</li>
+          <li><i class="fas fa-check-circle"></i> Weekly analytics report</li>
+          <li><i class="fas fa-check-circle"></i> Volume-based discounts</li>
+          <li><i class="fas fa-check-circle"></i> Dedicated phone support</li>
+        </ul>
+        <a href="#contact" class="btn-plan">Apply for Gold</a>
+      </div>
+      <div class="plan-card platinum reveal" style="transition-delay:0.2s">
+        <div class="plan-icon"><i class="fas fa-crown"></i></div>
+        <div class="plan-name">Platinum</div>
+        <div class="plan-tagline">Enterprise-grade for large operations</div>
+        <div class="plan-limit-label">Credit Limit</div>
+        <div class="plan-limit-value">Custom</div>
+        <div class="plan-period">Negotiated credit terms</div>
+        <div class="plan-gauge"><div class="plan-gauge-fill" data-width="100"></div></div>
+        <ul class="plan-features">
+          <li><i class="fas fa-check-circle"></i> Fully customized credit limit</li>
+          <li><i class="fas fa-check-circle"></i> Flexible credit periods</li>
+          <li><i class="fas fa-check-circle"></i> Dedicated Relationship Manager</li>
+          <li><i class="fas fa-check-circle"></i> Real-time fleet dashboard</li>
+          <li><i class="fas fa-check-circle"></i> Fuel theft monitoring</li>
+          <li><i class="fas fa-check-circle"></i> Corporate tie-up benefits</li>
+          <li><i class="fas fa-check-circle"></i> On-site account visits</li>
+        </ul>
+        <a href="#contact" class="btn-plan">Request Platinum</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fleet">
+  <div class="container">
+    <div class="fleet-grid">
+      <div class="reveal">
+        <div class="section-tag">Fleet Management</div>
+        <h2 class="section-title">Complete Fuel Intelligence for Your Fleet</h2>
+        <p class="section-subtitle" style="margin-bottom:2rem">Monitor every drop. Our digital fleet tools give you full visibility into vehicle-wise consumption, driver behavior, and cost optimization.</p>
+        <div class="fleet-features">
+          <div class="fleet-feature"><div class="fleet-feat-icon"><i class="fas fa-id-card"></i></div><div><h4>Driver-wise Fuel Tracking</h4><p>Each driver tagged individually. Monitor fueling patterns and flag anomalies instantly.</p></div></div>
+          <div class="fleet-feature"><div class="fleet-feat-icon"><i class="fas fa-chart-bar"></i></div><div><h4>Vehicle-wise Consumption Reports</h4><p>Per-vehicle fuel efficiency reports to identify underperforming vehicles and reduce costs.</p></div></div>
+          <div class="fleet-feature"><div class="fleet-feat-icon"><i class="fas fa-calendar-day"></i></div><div><h4>Daily Transaction Reports</h4><p>Auto-generated daily summaries delivered to your email or WhatsApp every morning.</p></div></div>
+          <div class="fleet-feature"><div class="fleet-feat-icon"><i class="fas fa-shield-alt"></i></div><div><h4>Fuel Theft Prevention</h4><p>Cross-reference vehicle odometer data with fuel dispensed to detect pilferage early.</p></div></div>
+          <div class="fleet-feature"><div class="fleet-feat-icon"><i class="fab fa-whatsapp"></i></div><div><h4>WhatsApp Notifications</h4><p>Instant alerts on every transaction. Stay informed even when away from the office.</p></div></div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.2s">
+        <div class="fleet-dashboard">
+          <div class="fleet-dash-header">
+            <span class="fleet-dash-title"><i class="fas fa-tachometer-alt" style="color:var(--gold);margin-right:8px"></i>Fleet Dashboard</span>
+            <span class="live-badge"><span class="live-dot"></span>Live</span>
+          </div>
+          <div class="dash-stats">
+            <div class="dash-stat"><div class="dash-stat-val">₹2.4L</div><div class="dash-stat-label">This Month’s Fuel</div><div class="dash-stat-change">↑ 8.2% vs last month</div></div>
+            <div class="dash-stat"><div class="dash-stat-val">24</div><div class="dash-stat-label">Active Vehicles</div><div class="dash-stat-change">↑ 3 new this week</div></div>
+            <div class="dash-stat"><div class="dash-stat-val">6,840</div><div class="dash-stat-label">Litres Dispensed</div><div class="dash-stat-change">Month to date</div></div>
+            <div class="dash-stat"><div class="dash-stat-val">₹3.6L</div><div class="dash-stat-label">Available Credit</div><div class="dash-stat-change" style="color:var(--gold)">40% utilized</div></div>
+          </div>
+          <div class="dash-veh-title">Top Vehicles by Consumption</div>
+          <div class="dash-veh-row"><span class="veh-num">MH 09 AB 1234</span><div class="veh-bar"><div class="veh-fill" style="width:88%"></div></div><span class="veh-ltr">880 L</span></div>
+          <div class="dash-veh-row"><span class="veh-num">MH 09 CD 5678</span><div class="veh-bar"><div class="veh-fill" style="width:72%"></div></div><span class="veh-ltr">720 L</span></div>
+          <div class="dash-veh-row"><span class="veh-num">MH 09 EF 9012</span><div class="veh-bar"><div class="veh-fill" style="width:60%"></div></div><span class="veh-ltr">600 L</span></div>
+          <div class="dash-veh-row"><span class="veh-num">MH 09 GH 3456</span><div class="veh-bar"><div class="veh-fill" style="width:45%"></div></div><span class="veh-ltr">450 L</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rewards">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-tag gold">Customer Programs</div>
+      <h2 class="section-title">Rewards That Grow With Your Business</h2>
+      <p class="section-subtitle">Exclusive programs designed to reward loyalty, encourage referrals, and celebrate your business growth.</p>
+    </div>
+    <div class="rewards-grid">
+      <div class="reward-card reveal"><div class="reward-num">01</div><h3>Referral Reward Program</h3><p>Earn attractive rewards for every new fleet or business you refer to Shetkari Petroleum. The more you refer, the more you earn.</p></div>
+      <div class="reward-card reveal" style="transition-delay:0.05s"><div class="reward-num">02</div><h3>Fleet Loyalty Benefits</h3><p>Long-term customers enjoy enhanced credit limits, priority lanes, and exclusive pricing benefits as a token of appreciation.</p></div>
+      <div class="reward-card reveal" style="transition-delay:0.1s"><div class="reward-num">03</div><h3>Festival Special Offers</h3><p>Seasonal promotions during Diwali, Dasara, and Ganesh Chaturthi with bonus credits and special pricing windows.</p></div>
+      <div class="reward-card reveal" style="transition-delay:0.15s"><div class="reward-num">04</div><h3>Driver Appreciation Rewards</h3><p>Monthly recognition for top-rated drivers with fuel vouchers and digital certificates of appreciation.</p></div>
+      <div class="reward-card reveal" style="transition-delay:0.2s"><div class="reward-num">05</div><h3>Priority Fueling Lane</h3><p>Gold and Platinum members skip the general queue with a dedicated fast-fill lane for all fleet vehicles.</p></div>
+      <div class="reward-card reveal" style="transition-delay:0.25s"><div class="reward-num">06</div><h3>Corporate Tie-up Program</h3><p>Formal corporate agreements with customized SLAs, dedicated contacts, and volume-based pricing slabs.</p></div>
+      <div class="reward-card reveal" style="transition-delay:0.3s"><div class="reward-num">07</div><h3>Volume-Based Benefits</h3><p>Automatic tier upgrades when your monthly consumption crosses defined thresholds — no application needed.</p></div>
+      <div class="reward-card reveal" style="transition-delay:0.35s"><div class="reward-num">08</div><h3>Dedicated Customer Support</h3><p>Direct WhatsApp line to your relationship manager. Billing disputes resolved within 24 hours, guaranteed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><div class="stat-number"><span class="counter" data-target="500">0</span><span class="stat-suffix">+</span></div><div class="stat-label">Active Fleet Customers</div><div class="stat-divider"></div></div>
+      <div class="stat-item reveal" style="transition-delay:0.1s"><div class="stat-number"><span class="counter" data-target="2">0</span><span class="stat-suffix">L+</span></div><div class="stat-label">Monthly Diesel Volume (Litres)</div><div class="stat-divider"></div></div>
+      <div class="stat-item reveal" style="transition-delay:0.2s"><div class="stat-number"><span class="counter" data-target="120">0</span><span class="stat-suffix">+</span></div><div class="stat-label">Business Partners</div><div class="stat-divider"></div></div>
+      <div class="stat-item reveal" style="transition-delay:0.3s"><div class="stat-number"><span class="counter" data-target="20">0</span><span class="stat-suffix">+</span></div><div class="stat-label">Years of Trusted Service</div><div class="stat-divider"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-tag">Testimonials</div>
+      <h2 class="section-title">Trusted by Businesses Across the Region</h2>
+      <p class="section-subtitle">Hear directly from fleet owners, contractors, and transport operators who rely on Shetkari Petroleum every day.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">"Switching to Shetkari Petroleum’s Gold credit account was the best decision for our logistics operations. The 30-day billing cycle aligns perfectly with our payment cycles, and the WhatsApp statements save us hours every month. The support team is always just a call away."</p><div class="testi-author"><div class="testi-avatar">RK</div><div><div class="testi-name">Rajesh Kumar</div><div class="testi-role">Director</div><div class="testi-company">Shree Logistics Pvt. Ltd.</div></div></div></div>
+      <div class="testi-card reveal" style="transition-delay:0.1s"><div class="testi-stars">★★★★★</div><p class="testi-text">"We run 35 trucks on the NH4 Pune-Bengaluru corridor and Shetkari Petroleum handles all our diesel needs on credit. The driver-wise tracking has helped us reduce unauthorized fueling by nearly 18%. Excellent transparency and GST invoices always ready on time."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--red)">SR</div><div><div class="testi-name">Suresh Rathod</div><div class="testi-role">Fleet Owner</div><div class="testi-company">Rathod Transport Services</div></div></div></div>
+      <div class="testi-card reveal" style="transition-delay:0.15s"><div class="testi-stars">★★★★★</div><p class="testi-text">"As a civil contractor, our JCBs and bulldozers consume large amounts of diesel daily. Shetkari Petroleum’s Platinum account gives us a customized credit limit and a dedicated relationship manager who understands site-specific fueling needs. Highly recommended."</p><div class="testi-author"><div class="testi-avatar" style="background:#0d9488">MS</div><div><div class="testi-name">Mahesh Shinde</div><div class="testi-role">Civil Contractor</div><div class="testi-company">Shinde Construction Co.</div></div></div></div>
+      <div class="testi-card reveal" style="transition-delay:0.25s"><div class="testi-stars">★★★★★</div><p class="testi-text">"We operate 12 school buses across Chikodi taluka and the credit facility from Shetkari Petroleum has been a blessing. Monthly billing, clear statements, and the priority lane means our buses are always fueled and on time. Parents trust us, and we trust Shetkari Petroleum."</p><div class="testi-author"><div class="testi-avatar" style="background:#7c3aed">AD</div><div><div class="testi-name">Anita Desai</div><div class="testi-role">Managing Partner</div><div class="testi-company">Vidya School Bus Services</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="trust">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-tag">Trust &amp; Security</div>
+      <h2 class="section-title">Your Business Credit, Protected</h2>
+      <p class="section-subtitle">We’ve built a credit system that prioritizes transparency, security, and your long-term business relationship with us.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item reveal"><div class="trust-icon"><i class="fas fa-file-contract"></i></div><h4>Transparent Billing</h4><p>Every charge is itemized. No hidden fees, no surprise charges — ever.</p></div>
+      <div class="trust-item reveal" style="transition-delay:0.07s"><div class="trust-icon"><i class="fas fa-clipboard-check"></i></div><h4>Credit Approval Process</h4><p>Simple documentation, quick verification, and credit activated within 48 hours.</p></div>
+      <div class="trust-item reveal" style="transition-delay:0.14s"><div class="trust-icon"><i class="fas fa-folder-open"></i></div><h4>Professional Documentation</h4><p>Formal credit agreements, GST invoices, and proper paper trails for your records.</p></div>
+      <div class="trust-item reveal" style="transition-delay:0.21s"><div class="trust-icon"><i class="fas fa-lock"></i></div><h4>Account Security</h4><p>Unique account codes per driver/vehicle to prevent unauthorized usage of your credit.</p></div>
+      <div class="trust-item reveal" style="transition-delay:0.28s"><div class="trust-icon"><i class="fas fa-bell"></i></div><h4>Timely Statements</h4><p>Monthly statements dispatched on time, every time — via email and WhatsApp.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta-banner">
+  <div class="container cta-inner reveal">
+    <h2>Ready to Grow Your Business<br>with Trusted Fuel Credit?</h2>
+    <p>Join 500+ businesses that fuel smarter with Shetkari Petroleum’s credit solutions.</p>
+    <div class="cta-btns">
+      <a href="#contact" class="btn-white"><i class="fas fa-file-alt"></i> Request Credit Facility</a>
+      <a href="tel:+919552055022" class="btn-white-outline"><i class="fas fa-calendar-alt"></i> Schedule Meeting</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <div class="section-tag">FAQ</div>
+      <h2 class="section-title">Common Questions Answered</h2>
+      <p class="section-subtitle">Everything you need to know about our credit program before applying.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Who is eligible to apply for a fuel credit account? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Any registered business — transport company, contractor, school, logistics firm, agricultural cooperative — with valid business documents can apply. Individuals operating commercial vehicles may also qualify based on consumption volume.</div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">What documents are required for the credit account application? <i class="fas fa-chevron-down"></i></div><div class="faq-a">You’ll need: GST Registration Certificate, PAN Card (business/individual), Cancelled Cheque, Vehicle Registration Copies, and a signed Credit Agreement form. Our team will guide you through the process end-to-end.</div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">How long does credit account approval take? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Once all documents are submitted, our verification process is completed within 24–48 working hours. You’ll receive confirmation via WhatsApp and your account will be active immediately.</div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Can I increase my credit limit once the account is active? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Yes. After maintaining 3 months of consistent payment history, you can request a credit limit review. Limits are enhanced based on your consumption history and payment track record.</div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">How are billing statements delivered? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Statements are sent via WhatsApp and email on the 1st of every month. You can also request transaction details anytime by contacting your dedicated account manager.</div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Is there a security deposit required? <i class="fas fa-chevron-down"></i></div><div class="faq-a">For Silver accounts, a refundable security deposit equivalent to one billing cycle’s expected consumption may be required. Gold and Platinum account deposit requirements are discussed during the approval process.</div></div>
+      <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Can multiple vehicles and drivers use the same account? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Absolutely. Fleet accounts support unlimited vehicles and drivers under a single credit umbrella. Each driver/vehicle is assigned a unique tracking code and you get consolidated monthly reporting across your entire fleet.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="section-tag">Contact Us</div>
+        <h2 class="section-title">Get in Touch with Our Team</h2>
+        <p class="section-subtitle">Visit us at the pump or reach out — our team is ready to set up your credit account and walk you through every step.</p>
+        <div class="contact-details">
+          <div class="contact-detail"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Address</h4><p>Shetkari Petroleum, HPCL Authorized Dealer<br>NH 4, Pune–Bengaluru Road, Kognoli<br>Near Kognoli Toll Naka<br>Tal. Chikodi, Dist. Belgaum, Karnataka – 591 229</p></div></div>
+          <div class="contact-detail"><div class="contact-icon"><i class="fas fa-user-tie"></i></div><div><h4>Proprietor</h4><p>Dilip Bapuso Dindorle (Patil)</p></div></div>
+          <div class="contact-detail"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><h4>Phone</h4><a href="tel:+919552055022">+91 95520 55022</a></div></div>
+          <div class="contact-detail"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><div><h4>WhatsApp</h4><a href="https://wa.me/919552055022" target="_blank">+91 95520 55022</a></div></div>
+          <div class="contact-detail"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><a href="mailto:shetkaripetroleum@yahoo.in">shetkaripetroleum@yahoo.in</a></div></div>
+          <div class="contact-detail"><div class="contact-icon"><i class="fas fa-clock"></i></div><div><h4>Working Hours</h4><p>Open 24 Hours, 7 Days a Week</p></div></div>
+        </div>
+        <div class="map-caption" style="color:rgba(255,255,255,0.6);font-size:0.82rem;margin-top:2rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:8px"><i class="fas fa-map-marker-alt" style="color:var(--gold)"></i> NH 4, Pune–Bengaluru Road, Kognoli, Near Kognoli Toll Naka, Tal. Chikodi, Dist. Belgaum – 591229</div>
+        <div class="map-section">
+          <iframe src="https://www.google.com/maps?q=16.542188,74.318348&z=15&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Shetkari Petroleum Location – NH4 near Kognoli Toll Naka, Tal. Chikodi, Dist. Belgaum, 591229"></iframe>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=16.542188,74.318348&query_place_id=Kognoli+Toll+Naka,+NH4,+Chikodi,+Belgaum" target="_blank" rel="noopener" class="map-fallback"><i class="fas fa-location-arrow"></i> Open in Google Maps / Get Directions</a>
+      </div>
+      <div class="reveal" style="transition-delay:0.15s">
+        <div class="contact-form">
+          <h3><i class="fas fa-file-alt" style="color:var(--gold);margin-right:8px"></i>Apply for Credit Account</h3>
+          <div class="form-row">
+            <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Your full name" id="fname"></div>
+            <div class="form-group"><label>Business Name *</label><input type="text" placeholder="Company / firm name" id="bname"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="+91 XXXXX XXXXX" id="phone"></div>
+            <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" id="email"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Industry Type *</label><select id="industry"><option value="">Select your industry</option><option>Transport Company</option><option>Logistics Fleet</option><option>Construction Contractor</option><option>School / College Buses</option><option>Sugarcane Transporter</option><option>Agriculture Business</option><option>Earthmovers &amp; JCB</option><option>Corporate Fleet</option><option>Other</option></select></div>
+            <div class="form-group"><label>Preferred Plan *</label><select id="plan"><option value="">Select a plan</option><option>Silver – ₹1 Lakh / 15 Days</option><option>Gold – ₹5 Lakh / 30 Days</option><option>Platinum – Custom</option></select></div>
+          </div>
+          <div class="form-group"><label>Number of Vehicles</label><input type="number" placeholder="Approximate fleet size" id="vehicles" min="1"></div>
+          <div class="form-group"><label>Monthly Fuel Requirement (approx.)</label><textarea placeholder="Describe your monthly fuel needs, business operations, and any specific requirements..." id="message"></textarea></div>
+          <button class="btn-submit" onclick="submitForm()"><i class="fas fa-paper-plane"></i> Submit Credit Application</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:0.75rem">
+          <div class="nav-logo-badge">SP</div>
+          <div class="nav-logo-text"><strong>Shetkari Petroleum</strong><span>HPCL Authorized Dealer</span></div>
+        </div>
+        <p>Providing trusted fuel credit solutions to fleets, contractors, transporters, and logistics businesses since 2005. HPCL quality fuel, professional service.</p>
+        <div class="footer-hpcl-badge"><i class="fas fa-certificate"></i> HPCL Authorized Dealer</div>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#plans">Silver Credit Account</a></li>
+          <li><a href="#plans">Gold Credit Account</a></li>
+          <li><a href="#plans">Platinum Account</a></li>
+          <li><a href="#fleet">Fleet Management</a></li>
+          <li><a href="#benefits">Bulk Diesel Supply</a></li>
+          <li><a href="#benefits">GST Invoicing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul class="footer-links">
+          <li><a href="#industries">Transport Companies</a></li>
+          <li><a href="#industries">Logistics Fleets</a></li>
+          <li><a href="#industries">Contractors</a></li>
+          <li><a href="#industries">School Buses</a></li>
+          <li><a href="#industries">Agriculture</a></li>
+          <li><a href="#industries">Earthmovers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+919552055022"><i class="fas fa-phone" style="margin-right:6px;color:var(--gold)"></i>+91 95520 55022</a></li>
+          <li><a href="https://wa.me/919552055022"><i class="fab fa-whatsapp" style="margin-right:6px;color:#25d366"></i>WhatsApp Us</a></li>
+          <li><a href="mailto:shetkaripetroleum@yahoo.in"><i class="fas fa-envelope" style="margin-right:6px;color:var(--gold)"></i>shetkaripetroleum@yahoo.in</a></li>
+          <li><a href="#contact"><i class="fas fa-map-marker-alt" style="margin-right:6px;color:var(--red)"></i>Kognoli, NH4</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+          <li><a href="#contact">Apply for Credit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Shetkari Petroleum – HPCL Authorized Dealer. All rights reserved. | Kognoli, NH4, Belgaum District</p>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#contact">Contact</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919552055022?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20fuel%20credit%20program." class="wa-float" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<div class="toast" id="toast"><i class="fas fa-check-circle"></i> <span id="toast-msg"></span></div>
+
+<script>
+window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60)});
+function toggleMobileNav(){document.getElementById('mobileNav').classList.toggle('open')}
+function closeMobileNav(){document.getElementById('mobileNav').classList.remove('open')}
+var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el)});
+window.addEventListener('load',function(){setTimeout(function(){document.querySelectorAll('.plan-fill[data-width]').forEach(function(f){f.style.width=f.dataset.width+'%'})},800)});
+var po=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.querySelectorAll('.plan-gauge-fill[data-width]').forEach(function(f){f.style.width=f.dataset.width+'%'})})},{threshold:0.3});
+document.querySelectorAll('.plan-card').forEach(function(el){po.observe(el)});
+function animCounter(el){var t=parseInt(el.dataset.target),d=2000,s=performance.now();function u(n){var p=Math.min((n-s)/d,1),e=1-Math.pow(1-p,3);el.textContent=Math.floor(e*t);if(p<1)requestAnimationFrame(u);else el.textContent=t}requestAnimationFrame(u)}
+var co=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.querySelectorAll('.counter').forEach(function(c){animCounter(c)});co.unobserve(x.target)}})},{threshold:0.4});
+document.querySelectorAll('#stats').forEach(function(el){co.observe(el)});
+function toggleFaq(el){var item=el.parentElement,open=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(i){i.classList.remove('open')});if(!open)item.classList.add('open')}
+function submitForm(){
+  var fname=document.getElementById('fname').value.trim();
+  var bname=document.getElementById('bname').value.trim();
+  var phone=document.getElementById('phone').value.trim();
+  var industry=document.getElementById('industry').value;
+  var plan=document.getElementById('plan').value;
+  if(!fname||!bname||!phone||!industry||!plan){showToast('Please fill in all required fields.',false);return}
+  if(!/^[+\d\s]{10,15}$/.test(phone)){showToast('Please enter a valid phone number.',false);return}
+  showToast('Application submitted! We’ll contact you within 24 hours.');
+  ['fname','bname','phone','email','vehicles','message'].forEach(function(id){document.getElementById(id).value=''});
+  document.getElementById('industry').value='';
+  document.getElementById('plan').value='';
+}
+function showToast(msg,success){
+  if(success===undefined)success=true;
+  var t=document.getElementById('toast');
+  document.getElementById('toast-msg').textContent=msg;
+  t.style.background=success?'#22c55e':'#ef4444';
+  t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show')},4000);
+}
+</script>
+</body>
+</html>
